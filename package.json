@@ -14,7 +14,8 @@
     "build:ssr:local": "rimraf dist && ng build && ng run small-test:server:local",
     "build:ssr": "rimraf dist && ng build --prod && ng run small-test:server:production",
     "deploy:gcloud:local": "build:ssr:local && gcloud app deploy",
-    "deploy:gcloud": "build:ssr && gcloud app deploy"
+    "deploy:gcloud": "build:ssr && gcloud app deploy",
+    "deploy:fb:func": "npm run build:ssr && firebase deploy"
   },
   "private": true,
   "dependencies": {

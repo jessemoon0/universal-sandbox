@@ -3,6 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
+  // Firebase serve
+  // translocoUrl: 'http://localhost:5000',
   translocoUrl: 'http://localhost:4000',
   production: false,
   firebase: {
