@@ -1,5 +1,5 @@
 export const environment = {
-  translocoUrl: 'https://dev-testing-1d2c7.ue.r.appspot.com',
+  translocoUrl: 'https://dev-testing-1d2c7.web.app',
   production: true,
   firebase: {
     apiKey: 'AIzaSyBbRTxKfgXFTjginlXpUhIp94oFSyNhNak',
