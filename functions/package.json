@@ -39,8 +39,7 @@
   "devDependencies": {
     "tslint": "^5.12.0",
     "typescript": "^3.7.5",
-    "firebase-functions-test": "^0.2.0",
-    "@types/jsdom": "^12.2.4"
+    "firebase-functions-test": "^0.2.0"
   },
   "private": true
 }
