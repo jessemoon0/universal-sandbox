@@ -1,4 +1,7 @@
 export const environment = {
+  // Google Cloud App Engine
+  // translocoUrl: 'https://dev-testing-1d2c7.ue.r.appspot.com',
+  // Firebase Function
   translocoUrl: 'https://dev-testing-1d2c7.web.app',
   production: true,
   firebase: {
