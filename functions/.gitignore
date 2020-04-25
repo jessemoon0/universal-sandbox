@@ -1,5 +1,6 @@
 ## Compiled JavaScript files
 **/*.js
+!**/prepare-ssr.js
 **/*.js.map
 
 # Typescript v1 declaration files
