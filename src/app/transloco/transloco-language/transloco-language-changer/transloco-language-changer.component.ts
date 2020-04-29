@@ -1,7 +1,7 @@
 import { AfterViewInit, Component } from '@angular/core';
-import { AvailableLanguages } from '../enum';
+import { AvailableLanguages } from '../../enum';
 import { TRANSLOCO_LOADER, TranslocoService } from '@ngneat/transloco';
-import { TranslocoToggleLanguageService } from '../services';
+import { TranslocoToggleLanguageService } from '../../services';
 
 @Component({
   selector: 'app-transloco-language-changer',

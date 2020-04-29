@@ -5,12 +5,10 @@ import {
 } from '@ngneat/transloco';
 import { NgModule } from '@angular/core';
 import { environment } from '../../environments/environment';
-import { TranslocoLanguageChangerComponent } from './transloco-language-changer/transloco-language-changer.component';
 import { translocoHttpLoader } from './services/transloco-http-loader.service';
 
 @NgModule({
-  declarations: [TranslocoLanguageChangerComponent],
-  exports: [ TranslocoModule, TranslocoLanguageChangerComponent ],
+  exports: [TranslocoModule],
   providers: [
     {
       provide: TRANSLOCO_CONFIG,
