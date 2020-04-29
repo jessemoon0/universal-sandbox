@@ -1,6 +1,7 @@
 import { AfterViewInit, Component } from '@angular/core';
 import { AvailableLanguages } from '../enum';
-import { TranslocoService } from '@ngneat/transloco';
+import { TRANSLOCO_LOADER, TranslocoService } from '@ngneat/transloco';
+import { TranslocoToggleLanguageService } from '../services';
 
 @Component({
   selector: 'app-transloco-language-changer',
@@ -12,7 +13,7 @@ export class TranslocoLanguageChangerComponent implements AfterViewInit {
 
   constructor(
     private translocoService: TranslocoService,
-    // private translocoToggleService: TranslocoToggleLanguageService
+    private translocoToggleService: TranslocoToggleLanguageService
   ) {}
 
   public ngAfterViewInit() {
@@ -20,6 +21,6 @@ export class TranslocoLanguageChangerComponent implements AfterViewInit {
   }
 
   public onLanguageChange() {
-    // this.activeLanguage = this.translocoToggleService.toggleLanguage();
+    this.activeLanguage = this.translocoToggleService.toggleLanguage();
   }
 }
