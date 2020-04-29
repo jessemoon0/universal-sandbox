@@ -15,7 +15,7 @@ import { TranslocoLanguageChangerComponent } from './transloco-language-changer/
 export class TranslocoHttpLoader implements TranslocoLoader {
   constructor(private http: HttpClient) {}
 
-  getTranslation(lang: string) {
+  public getTranslation(lang: string) {
     return this.http.get<Translation>(`${environment.translocoUrl}/assets/i18n/${lang}.json`);
   }
 }
